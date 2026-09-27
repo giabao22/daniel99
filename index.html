@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vietnam FMCG Wholesaler & Exporter | VN Wholesale Co.</title>
+    <meta name="description" content="Wholesale and export of genuine Vietnamese FMCG — home care, personal care, beverages and food. Request a wholesale quote today.">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#16a34a', // Green
+                        secondary: '#1e3a8a', // Dark blue
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans antialiased text-gray-800 bg-gray-50">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-50 top-0">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <a href="#" class="flex-shrink-0 flex items-center gap-2">
+                        <!-- Placeholder Logo -->
+                        <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xl">
+                            VN
+                        </div>
+                        <span class="font-bold text-2xl text-secondary">Wholesale Co.</span>
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-600 hover:text-primary font-medium transition">Home</a>
+                    <a href="#categories" class="text-gray-600 hover:text-primary font-medium transition">Categories</a>
+                    <a href="#about" class="text-gray-600 hover:text-primary font-medium transition">About Us</a>
+                    <a href="#contact" class="text-gray-600 hover:text-primary font-medium transition">Contact</a>
+                    <a href="#contact" class="bg-primary text-white px-6 py-2 rounded-md font-semibold hover:bg-green-700 transition shadow-lg">Request a Quote</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="flex items-center md:hidden">
+                    <button type="button" id="mobile-menu-btn" class="text-gray-600 hover:text-primary focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-white border-t" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50">Home</a>
+                <a href="#categories" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50">Categories</a>
+                <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50">About Us</a>
+                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50">Contact</a>
+                <a href="#contact" class="block px-3 py-2 mt-4 text-center rounded-md font-bold bg-primary text-white hover:bg-green-700">Request a Quote</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative pt-20 pb-32 flex items-center justify-center min-h-[600px] overflow-hidden">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1586528116311-ad8ed7c1590a?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" alt="Warehouse" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gray-900 opacity-70"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white tracking-tight mb-6">
+                Vietnam FMCG <span class="text-primary">Wholesaler & Exporter</span>
+            </h1>
+            <p class="mt-4 text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto mb-10">
+                Wholesale and export of genuine Vietnamese FMCG — home care, personal care, beverages and food from 160+ brands to importers in 50+ countries.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#categories" class="px-8 py-4 bg-white text-secondary font-bold rounded-lg hover:bg-gray-100 transition shadow-lg text-lg">
+                    View Products
+                </a>
+                <a href="#contact" class="px-8 py-4 bg-primary text-white font-bold rounded-lg hover:bg-green-700 transition shadow-lg text-lg">
+                    Get Wholesale Quote
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="bg-secondary py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-4xl font-bold text-white mb-2">160+</div>
+                    <div class="text-blue-200 font-medium uppercase tracking-wide">FMCG Brands</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-white mb-2">50+</div>
+                    <div class="text-blue-200 font-medium uppercase tracking-wide">Countries Exported</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-white mb-2">14+</div>
+                    <div class="text-blue-200 font-medium uppercase tracking-wide">Years Experience</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-white mb-2">100%</div>
+                    <div class="text-blue-200 font-medium uppercase tracking-wide">Genuine Products</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Product Categories</h2>
+                <div class="w-24 h-1 bg-primary mx-auto"></div>
+                <p class="mt-4 text-lg text-gray-600">We supply a wide range of fast-moving consumer goods from top global and local brands.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Category 1 -->
+                <div class="group rounded-xl overflow-hidden shadow-lg bg-gray-50 hover:shadow-2xl transition duration-300">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1584820927498-cafe2c159018?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Home Care" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-black bg-opacity-20 group-hover:bg-opacity-10 transition"></div>
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Home Care</h3>
+                        <p class="text-gray-600 mb-4 text-sm">Laundry detergents, dishwashing liquids, floor cleaners, and more.</p>
+                        <a href="#contact" class="text-primary font-semibold hover:text-green-700">Inquire Now &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Category 2 -->
+                <div class="group rounded-xl overflow-hidden shadow-lg bg-gray-50 hover:shadow-2xl transition duration-300">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Personal Care" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-black bg-opacity-20 group-hover:bg-opacity-10 transition"></div>
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Personal Care</h3>
+                        <p class="text-gray-600 mb-4 text-sm">Shampoos, body wash, toothpaste, skincare and beauty products.</p>
+                        <a href="#contact" class="text-primary font-semibold hover:text-green-700">Inquire Now &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Category 3 -->
+                <div class="group rounded-xl overflow-hidden shadow-lg bg-gray-50 hover:shadow-2xl transition duration-300">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1622483767028-3f66f32aef97?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Beverages" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-black bg-opacity-20 group-hover:bg-opacity-10 transition"></div>
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Beverages</h3>
+                        <p class="text-gray-600 mb-4 text-sm">Energy drinks, soft drinks, coffee, tea, and fruit juices.</p>
+                        <a href="#contact" class="text-primary font-semibold hover:text-green-700">Inquire Now &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Category 4 -->
+                <div class="group rounded-xl overflow-hidden shadow-lg bg-gray-50 hover:shadow-2xl transition duration-300">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Food & Snacks" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-black bg-opacity-20 group-hover:bg-opacity-10 transition"></div>
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Food & Snacks</h3>
+                        <p class="text-gray-600 mb-4 text-sm">Noodles, confectionery, biscuits, canned foods, and condiments.</p>
+                        <a href="#contact" class="text-primary font-semibold hover:text-green-700">Inquire Now &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Logistics and Export" class="rounded-lg shadow-xl w-full">
+                </div>
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Your Trusted Partner in Global Trade</h2>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        Established with a mission to bring high-quality Vietnamese and global FMCG products to the world, <strong>VN Wholesale Co.</strong> has grown to become a leading exporter. 
+                    </p>
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                        We consolidate a wide variety of goods into mixed containers, offering flexible solutions for importers, distributors, and supermarket chains worldwide. Our strong relationships with manufacturers guarantee genuine products and competitive prices.
+                    </p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-check-circle text-primary mt-1 mr-3 text-xl"></i>
+                            <span class="text-gray-700 font-medium">Mixed container loading (FCL & LCL)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-check-circle text-primary mt-1 mr-3 text-xl"></i>
+                            <span class="text-gray-700 font-medium">Customs clearance & documentation support</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-check-circle text-primary mt-1 mr-3 text-xl"></i>
+                            <span class="text-gray-700 font-medium">Sourcing requested products efficiently</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="inline-block px-8 py-3 bg-secondary text-white font-bold rounded-md hover:bg-blue-900 transition shadow-md">
+                        Learn More About Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action / Contact -->
+    <section id="contact" class="py-20 bg-primary relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <h2 class="text-3xl md:text-5xl font-bold text-white mb-6">Ready to Expand Your Inventory?</h2>
+            <p class="text-xl text-green-100 mb-10">Contact us today to receive a comprehensive product catalog and wholesale pricing tailored to your market.</p>
+            
+            <div class="bg-white rounded-xl shadow-2xl p-8 max-w-2xl mx-auto text-left">
+                <form action="#" method="POST" class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-primary focus:border-primary outline-none" placeholder="John Doe">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-primary focus:border-primary outline-none" placeholder="john@example.com">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="company" class="block text-sm font-medium text-gray-700 mb-1">Company & Country</label>
+                        <input type="text" id="company" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-primary focus:border-primary outline-none" placeholder="ABC Supermarket, USA">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Inquiry Details</label>
+                        <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-primary focus:border-primary outline-none" placeholder="Which products or brands are you interested in?"></textarea>
+                    </div>
+                    <button type="button" onclick="alert('This is a demo template. Form submission is not implemented yet.')" class="w-full bg-secondary text-white font-bold py-3 px-4 rounded-md hover:bg-blue-900 transition shadow-md">
+                        Send Inquiry
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="col-span-1 md:col-span-1">
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white font-bold text-sm">VN</div>
+                        <span class="font-bold text-xl text-white">Wholesale Co.</span>
+                    </div>
+                    <p class="text-sm text-gray-400 mb-6">
+                        Your reliable partner for FMCG wholesale and export from Vietnam. Bringing quality goods to global markets.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fa-brands fa-facebook text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fa-brands fa-linkedin text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fa-brands fa-twitter text-xl"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-white font-semibold mb-4 uppercase tracking-wider">Quick Links</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#home" class="hover:text-primary transition">Home</a></li>
+                        <li><a href="#about" class="hover:text-primary transition">About Us</a></li>
+                        <li><a href="#categories" class="hover:text-primary transition">Products</a></li>
+                        <li><a href="#contact" class="hover:text-primary transition">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-white font-semibold mb-4 uppercase tracking-wider">Categories</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-primary transition">Home Care</a></li>
+                        <li><a href="#" class="hover:text-primary transition">Personal Care</a></li>
+                        <li><a href="#" class="hover:text-primary transition">Beverages</a></li>
+                        <li><a href="#" class="hover:text-primary transition">Food & Snacks</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-white font-semibold mb-4 uppercase tracking-wider">Contact Info</h3>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-location-dot mt-1 mr-3 text-primary"></i>
+                            <span>123 Export Street, District 1,<br>Ho Chi Minh City, Vietnam</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-phone mr-3 text-primary"></i>
+                            <span>+84 123 456 789</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-envelope mr-3 text-primary"></i>
+                            <span>export@vnwholesale.example.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-sm text-gray-500">
+                &copy; 2026 VN Wholesale Co., Ltd. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
+
