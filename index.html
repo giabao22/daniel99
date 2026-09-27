@@ -231,26 +231,26 @@
             <p class="text-xl text-green-100 mb-10">Contact us today to receive a comprehensive product catalog and wholesale pricing tailored to your market.</p>
             
             <div class="bg-white rounded-xl shadow-2xl p-8 max-w-2xl mx-auto text-left">
-                <form action="#" method="POST" class="space-y-6">
+                <form id="quote-form" class="space-y-6">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div>
                             <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
-                            <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-primary focus:border-primary outline-none" placeholder="John Doe">
+                            <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-primary focus:border-primary outline-none" placeholder="John Doe" required>
                         </div>
                         <div>
                             <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
-                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-primary focus:border-primary outline-none" placeholder="john@example.com">
+                            <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-primary focus:border-primary outline-none" placeholder="john@example.com" required>
                         </div>
                     </div>
                     <div>
                         <label for="company" class="block text-sm font-medium text-gray-700 mb-1">Company & Country</label>
-                        <input type="text" id="company" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-primary focus:border-primary outline-none" placeholder="ABC Supermarket, USA">
+                        <input type="text" id="company" name="company" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-primary focus:border-primary outline-none" placeholder="ABC Supermarket, USA" required>
                     </div>
                     <div>
                         <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Inquiry Details</label>
-                        <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-primary focus:border-primary outline-none" placeholder="Which products or brands are you interested in?"></textarea>
+                        <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-primary focus:border-primary outline-none" placeholder="Which products or brands are you interested in?" required></textarea>
                     </div>
-                    <button type="button" onclick="alert('This is a demo template. Form submission is not implemented yet.')" class="w-full bg-secondary text-white font-bold py-3 px-4 rounded-md hover:bg-blue-900 transition shadow-md">
+                    <button type="submit" class="w-full bg-secondary text-white font-bold py-3 px-4 rounded-md hover:bg-blue-900 transition shadow-md">
                         Send Inquiry
                     </button>
                 </form>
@@ -306,11 +306,11 @@
                         </li>
                         <li class="flex items-center">
                             <i class="fa-solid fa-phone mr-3 text-primary"></i>
-                            <span>+84 123 456 789</span>
+                            <a href="tel:+84123456789" class="hover:text-white transition">+84 123 456 789</a>
                         </li>
                         <li class="flex items-center">
                             <i class="fa-solid fa-envelope mr-3 text-primary"></i>
-                            <span>export@vnwholesale.example.com</span>
+                            <a href="mailto:info@vnwholesale.co" class="hover:text-white transition">info@vnwholesale.co</a>
                         </li>
                     </ul>
                 </div>
@@ -322,8 +322,28 @@
         </div>
     </footer>
 
-    <!-- Custom Script -->
-    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.getElementById('quote-form');
+            if (!form) return;
+
+            form.addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                const name = document.getElementById('name').value.trim();
+                const email = document.getElementById('email').value.trim();
+                const company = document.getElementById('company').value.trim();
+                const message = document.getElementById('message').value.trim();
+
+                const subject = encodeURIComponent(`Wholesale Inquiry from ${name || 'Potential Buyer'}`);
+                const body = encodeURIComponent(
+                    `Full Name: ${name}\nEmail Address: ${email}\nCompany & Country: ${company}\n\nInquiry Details:\n${message}`
+                );
+
+                window.location.href = `mailto:info@vnwholesale.co?subject=${subject}&body=${body}`;
+            });
+        });
+    </script>
 </body>
 </html>
 
